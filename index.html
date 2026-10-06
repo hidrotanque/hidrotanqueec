@@ -218,6 +218,57 @@ footer .lg img{height:34px}footer .lg span{font-size:14px}
 .floor{display:none}.stage canvas{filter:none}
 
 @media(max-width:860px){.stage .tchips .chip:nth-child(1){left:-8%;top:40%}.stage .tchips .chip:nth-child(2){right:-8%;left:auto;top:58%;bottom:auto}}
+
+/* ---- hero móvil: textos más pequeños, tanque algo más grande y los 3 titulares ---- */
+@media(max-width:860px){
+.stage{width:min(84vw,350px);height:52vh;top:80px}
+.hg{padding-top:calc(52vh + 108px)}
+.hero h1{font-size:clamp(33px,9.4vw,42px);line-height:1.05}
+.hero .lead{font-size:14.500px;line-height:1.55;margin:16px 0 22px}
+.hero .ey{font-size:11px;margin-bottom:12px}
+.hero .ha{gap:10px}.hero .ha .btn{padding:14px 24px;min-height:50px;font-size:15px}
+.stage .tchips .chip{padding:8px 11px;border-radius:13px;font-size:12.500px}
+.stage .tchips .chip small{font-size:10px;margin-top:2px}
+.stage .tchips .chip:nth-child(1){display:block;left:-4%;right:auto;top:27%;bottom:auto}
+.stage .tchips .chip:nth-child(2){display:block;right:-4%;left:auto;top:47%;bottom:auto}
+.stage .tchips .chip:nth-child(3){display:block;left:-4%;right:auto;top:66%;bottom:auto}
+.thint{font-size:11px;padding:6px 12px}
+}
+@media(max-width:860px) and (max-height:700px){.stage{height:47vh}.hg{padding-top:calc(47vh + 100px)}}
+@media(max-width:360px){.stage .tchips .chip{font-size:11.500px;padding:7px 9px}.stage .tchips .chip small{font-size:9.500px}}
+
+/* ---- v10: hero móvil — textos más pequeños, tanque algo más grande, 3 titulares ---- */
+@media(max-width:860px){
+.stage{top:78px;width:min(86vw,360px);height:50vh}
+.hg{padding-top:calc(50vh + 96px);padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.hero h1{font-size:clamp(33px,9.4vw,44px);line-height:1.04}
+.hero .ey{font-size:11px;margin-bottom:12px}
+.lead{font-size:14.5px;line-height:1.55;margin:14px 0 20px}
+.ha{gap:10px}.ha .btn{min-height:50px;padding:14px 24px;font-size:15px}
+.stage .tchips .chip{padding:7px 11px;border-radius:13px;font-size:12.5px}
+.stage .tchips .chip small{font-size:10px;margin-top:1px}
+.stage .tchips .chip:nth-child(1){left:-4%;top:27%;right:auto;bottom:auto}
+.stage .tchips .chip:nth-child(2){right:-4%;left:auto;top:45%;bottom:auto}
+.stage .tchips .chip:nth-child(3){display:block;left:-4%;right:auto;top:63%;bottom:auto}
+.thint{font-size:11px;padding:5px 11px;bottom:0}
+}
+@media(max-width:860px) and (max-height:700px){.stage{height:44vh;width:min(80vw,320px)}.hg{padding-top:calc(44vh + 92px)}.hero h1{font-size:clamp(30px,8.8vw,38px)}}
+@media(max-width:360px){.hero h1{font-size:31px}.stage .tchips .chip{font-size:12px}}
+
+/* ---- v10: hero móvil — tanque un poco más grande, titulares más pequeños y con "35 años" ---- */
+@media(max-width:860px){
+.stage{top:84px;width:min(80vw,350px);height:51vh}
+.hg{padding-top:calc(51vh + 118px)}
+.stage .tchips .chip{padding:7px 11px;border-radius:12px;font-size:12px;line-height:1.2;max-width:none}
+.stage .tchips .chip small{font-size:10px;margin-top:1px}
+.stage .tchips .chip:nth-child(1){display:block;left:-5%;right:auto;top:30%;bottom:auto}
+.stage .tchips .chip:nth-child(2){display:block;right:-5%;left:auto;top:47%;bottom:auto}
+.stage .tchips .chip:nth-child(3){display:block;left:-5%;right:auto;top:64%;bottom:auto}
+}
+@media(max-width:860px) and (max-height:700px){.stage{height:45vh}.hg{padding-top:calc(45vh + 112px)}}
+
+@media(max-width:860px){.hg{padding-top:calc(51vh + 68px)}}
+@media(max-width:860px) and (max-height:700px){.hg{padding-top:calc(45vh + 62px)}}
 </style></head><body>
 <a class="skip" href="#contenido">Saltar al contenido</a><canvas id="fx" aria-hidden="true"></canvas>
 <nav id="nav"><a href="#top" class="lg" aria-label="Hidrotanque, inicio"><img src="assets/img/logo.webp" width="359" height="123" alt="Hidrotanque"></a><div class="nl"><a href="#productos">Productos</a><a href="#como">Cómo funciona</a><a href="#constructoras" class="hl">Constructoras</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div><div class="nr"><a href="#contacto" class="btn bs">Cotizar</a><button class="bgr" id="bgr" aria-label="Menú"><i></i><i></i></button></div></nav>
