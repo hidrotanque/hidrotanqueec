@@ -269,6 +269,12 @@ footer .lg img{height:34px}footer .lg span{font-size:14px}
 
 @media(max-width:860px){.hg{padding-top:calc(51vh + 68px)}}
 @media(max-width:860px) and (max-height:700px){.hg{padding-top:calc(45vh + 62px)}}
+
+/* v11: titulares del hero en móvil ordenados como en escritorio (zigzag alrededor del tanque) */
+@media(max-width:860px){.stage .tchips{left:0;top:0;transform:none;width:100%;height:100%;max-width:none}
+.stage .tchips .chip:nth-child(1){left:8%;right:auto;top:33%;bottom:auto}
+.stage .tchips .chip:nth-child(2){right:3%;left:auto;top:51%;bottom:auto}
+.stage .tchips .chip:nth-child(3){left:6%;right:auto;top:68%;bottom:auto}}
 </style></head><body>
 <a class="skip" href="#contenido">Saltar al contenido</a><canvas id="fx" aria-hidden="true"></canvas>
 <nav id="nav"><a href="#top" class="lg" aria-label="Hidrotanque, inicio"><img src="assets/img/logo.webp" width="359" height="123" alt="Hidrotanque"></a><div class="nl"><a href="#productos">Productos</a><a href="#como">Cómo funciona</a><a href="#constructoras" class="hl">Constructoras</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div><div class="nr"><a href="#contacto" class="btn bs">Cotizar</a><button class="bgr" id="bgr" aria-label="Menú"><i></i><i></i></button></div></nav>
